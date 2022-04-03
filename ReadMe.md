@@ -25,6 +25,7 @@ For source file we create "src" directory then add "input.css" file, where we ad
     @tailwind components;  
     @tailwind utilities;
     
+
 ```
 
 ### create final or output css file and make watch between source file and output file
