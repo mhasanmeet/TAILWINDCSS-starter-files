@@ -1,5 +1,4 @@
 # Setup the basic environment
------------------------
 
 ### 1. install tailwind css by npm 
 <code>npm install -D tailwindcss</code>
