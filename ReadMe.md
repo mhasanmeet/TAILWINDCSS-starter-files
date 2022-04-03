@@ -13,9 +13,9 @@ This command will generate tailwind css "tailwind.config.js" file
 ### configure template path
 the "content: []," path file in "tailwind.config.js" need to updated. That means which JS files for Vue or React project or html file for basic project receive tailwind css stylesheet.
 
--- here for basic project we add, <code>content: ["*.html"],<code>
--- For vue or React project we add, <code>content: ["*.{html,js}"],<code>
--- Sometimes there may deep dive into paths <code>["./src/**/*.{html,js}"],<code>
+-- here for basic project we add, ```content: ["*.html"],```
+-- For vue or React project we add, ```content: ["*.{html,js}"],```
+-- Sometimes there may deep dive into paths ```["./src/**/*.{html,js}"],```
 
 ### Add source css file 
 For source file we create "src" directory then add "input.css" file, where we add 
