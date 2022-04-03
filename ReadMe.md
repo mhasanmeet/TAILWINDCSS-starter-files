@@ -21,7 +21,11 @@ the "content: []," path file in "tailwind.config.js" need to updated. That means
 For source file we create "src" directory then add "input.css" file, where we add 
 
 <code>
-    @tailwind base;  <br/>  @tailwind components;  <br/>@tailwind utilities;  <br/>
+
+    @tailwind base;  
+    @tailwind components;  
+    @tailwind utilities;
+
 </code>
 
 ### create final or output css file and make watch between source file and output file
