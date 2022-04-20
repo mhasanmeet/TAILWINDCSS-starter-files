@@ -1,5 +1,9 @@
 # Tailwind CSS advance Setup
 
+## Clone this specific branch
+
+```git clone --single-branch -b advance https://github.com/mhasanmeet/TAILWINDCSS-starter-files.git```
+
 ## In Tailwind custom css can be adjusted by two way
 
 * as regular custom.css (or whatever wish you name your file) file added into html files
