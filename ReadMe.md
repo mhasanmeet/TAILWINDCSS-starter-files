@@ -40,7 +40,9 @@ after watch command our every change will be watched by tailwind
 we create **"index.html"** as html file
 
 then we link our main css file into html file as 
-<code> <link rel="stylesheet" href="main.css"> </code>
+```css
+    <link rel="stylesheet" href="main.css">
+```
 
 ### 7. now we can code! 
 now write tailwincss css into html file and see change into browser! 
