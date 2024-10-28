@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "build": "bunx tailwindcss -i ./tailwind.css -o ./main.css",
+    "watch": "bunx tailwindcss -i ./tailwind.css -o ./main.css --watch"
+  },
   "devDependencies": {
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.4.14"
   }
 }

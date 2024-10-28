@@ -1,48 +1,29 @@
-# Setup the basic environment
+## Tailwind Bun Starter file
 
-### 1. install tailwind css by npm 
-<code>npm install -D tailwindcss</code>
+1. run command `bun add -d tailwindcss`
 
-This command will generate node modules and packages json files
+2. run command `bun run tailwindcss init`
 
-### 2. install tailwind config file
-<code>npx tailwindcss init</code>
+3. Create two css file, one is `tailwind.css` for tailwind directives and `main.css` is for output file
 
-This command will generate tailwind css "tailwind.config.js" file
-
-### 3. configure template path
-the "content: []," path file in "tailwind.config.js" need to updated. That means which JS files for Vue or React project or html file for basic project receive tailwind css stylesheet.
-
---> here for basic project we add, ```content: ["*.html"],``` <br/>
---> For vue or React project we add, ```content: ["*.{html,js}"],``` <br/>
---> Sometimes there may deep dive into paths ```["./src/**/*.{html,js}"],``` <br/>
-
-### 4. Add source css file 
-For source file we create "src" directory then add "input.css" file, where we add 
-
-
+4. put directives
 ```
-    @tailwind base;  
-    @tailwind components;  
-    @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+into `tailwind.css` file
+
+5. configure `tailwind.config.js` file, change content as, `content: ['./**/*.html'],`    
+
+6. Create automated scripts command into `package.json` file, as 
+```
+"scripts": {
+    "build": "bunx tailwindcss -i ./tailwind.css -o ./main.css",
+    "watch": "bunx tailwindcss -i ./tailwind.css -o ./main.css --watch"
+}
 ```
 
-### 5. create final or output css file and make watch between source file and output file
+7. finally run command for tailwind build and watch css `bunx tailwindcss -i ./tailwind.css -o ./main.css --watch`
 
-we create **"main.css"** as final file for css stylesheet
-
-and for watch we need to run command as <code>npx tailwindcss -i ./src/input.css -o main.css --watch</code>
-
-after watch command our every change will be watched by tailwind
-
-### 6. create html file and link our main css file into html 
-
-we create **"index.html"** as html file
-
-then we link our main css file into html file as 
-```css
-    <link rel="stylesheet" href="main.css">
-```
-
-### 7. now we can code! 
-now write tailwincss css into html file and see change into browser! 
+8. We can now add this `main.css` file to index.html file to view out final output. 
